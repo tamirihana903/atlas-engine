@@ -3,77 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Website Sederhana</title>
+    <title>Halaman Statis</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('#');
-            background-size: cover;
-            background-position: center;
-            color: #000;
+            box-sizing: border-box;
         }
 
         header {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 10px;
         }
 
-        header img {
-            max-width: 100%; /* Agar logo tidak melebihi lebar header */
-            height: auto;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #000;
+        img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
         }
 
         section {
-            margin-top: 20px;
+            padding: 20px;
         }
     </style>
-
-<script>
-function show(shown, hidden) {
-  document.getElementById(shown).style.display='block';
-  document.getElementById(hidden).style.display='none';
-  return false;
-}
-</script>
-    
 </head>
 <body>
 
+    <!-- Halaman 1 -->
     <header>
-        <img src="https://i.ibb.co/hX7HcWg/logo-1.png" alt="Logo"> <!-- Ganti path/to/your/logo.png dengan path menuju logo Anda -->
+        <img src="path/to/logo.png" alt="Logo">
     </header>
+    <section>
+        <h1>Halaman 1</h1>
+        <p>Isi konten Halaman 1 disini...</p>
+    </section>
 
+    <!-- Halaman 2 -->
+    <header>
+        <img src="path/to/logo.png" alt="Logo">
+    </header>
+    <section>
+        <h1>Halaman 2</h1>
+        <p>Isi konten Halaman 2 disini...</p>
+    </section>
 
- <div id="Page1">
-    Content of page 1
-    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-  </div>
-    
-  <div id="Page2" style="display:none">
-    Content of page 2
-    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-  </div>
-    
-
-    
-<center>
-
-
-
-    
-</center>
 </body>
 </html>
